@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossiê do Pesquisador</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container" id="dadosPerfil">
+        <!-- Os dados serão inseridos aqui pelo JavaScript -->
+    </div>
+    <button class="voltar" onclick="window.location.href='index.html'">Voltar</button>
+
+    <script>
+        // O código executa quando a página termina de carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            const xmlContent = localStorage.getItem('uploadedXML');
+            if (!xmlContent) {
+                document.getElementById('dadosPerfil').innerHTML = '<p>Nenhum arquivo XML encontrado.</p>';
+                return;
+            }
+            
+            // Transforma string em documentos XML ou HTML
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlContent, "text/xml");
+
+            // Busca o elemento pessoa
+            const pessoa = xmlDoc.querySelector('pessoa');
+            if (!pessoa) {
+                document.getElementById('dadosPerfil').innerHTML = '<p>Formato de XML inválido.</p>';
+                return;
+            }
+
+            // Extrai os dados de Nome e Descrição
+            const nome = pessoa.querySelector('nome')?.textContent || '';
+            const sobrenome = pessoa.querySelector('sobrenome')?.textContent || '';
+            const descricao = pessoa.querySelector('descricao')?.textContent || '';
+
+            // Constroi HTML do perfil
+            let html = `
+                <div class="tituloPerfil">
+                    <h1 class="nomePefil">${nome} ${sobrenome}</h1>
+                    <p class="descricaoPerfil">${descricao}</p>
+                </div>
+            `;
+
+            // Seção de Formação
+            const formacao = pessoa.querySelector('formacao');
+            if (formacao) {
+                html += `<div class="secao">
+                    <h2 class="tituloSecao">Formação Acadêmica</h2>`;
+
+                // Graduação
+                const graduacao = formacao.querySelector('graduacao');
+                if (graduacao) {
+                    html += criarEducacao(graduacao, 'Graduação');
+                }
+
+                // Mestrado
+                const mestrado = formacao.querySelector('mestrado');
+                if (mestrado) {
+                    html += criarEducacao(mestrado, 'Mestrado');
+                }
+
+                // Doutorado
+                const doutorado = formacao.querySelector('doutorado');
+                if (doutorado) {
+                    // Chama a função que pega elemento por elemento até formar o texto
+                    html += criarEducacao(doutorado, 'Doutorado');
+                }
+
+                html += `</div>`;
+            }
+
+            // Extrai as informações de publicação
+            const publicacoes = pessoa.querySelector('publicacoes');
+            if (publicacoes) {
+                html += `<div class="secao">
+                    <h2 class="tituloSecao">Publicações</h2>`;
+
+                const publicacaoItems = publicacoes.querySelectorAll('publicacao');
+                publicacaoItems.forEach(pub => {
+                    // Chama a função que pega elemento por elemento até formar o texto
+                    html += criarPublicacao(pub);
+                });
+
+                html += `</div>`;
+            }
+
+            document.getElementById('dadosPerfil').innerHTML = html;
+        });
+
+        function criarEducacao(item, tipoEdu) {
+            const tituloobtido = item.querySelector('tituloobtido')?.textContent || '';
+            const instituicao = item.querySelector('instituicao')?.textContent || '';
+            const local = item.querySelector('local')?.textContent || '';
+            const titulo = item.querySelector('titulo')?.textContent || '';
+            const anoinicio = item.querySelector('anoinicio')?.textContent || '';
+            const anofim = item.querySelector('anofim')?.textContent || 'Atual';
+            const orientador = item.querySelector('orientador')?.textContent || '';
+
+            return `
+                <div class="educacao">
+                    <div class="grauEducacao">${tituloobtido}</div>
+                    <div class="instituicaoEducacao">${instituicao} - ${local}</div>
+                    <div class="duracaoEducacao">${anoinicio} - ${anofim}</div>
+                    <div class="tituloEducacao">${titulo}</div>
+                    <div class="orientadorEducacao">Orientador: ${orientador}</div>
+                </div>
+            `;
+        }
+
+        function criarPublicacao(item) {
+            const titulo = item.querySelector('titulo')?.textContent || '';
+            const ano = item.querySelector('ano')?.textContent || '';
+            const evento = item.querySelector('evento')?.textContent || '';
+            const local = item.querySelector('local')?.textContent || '';
+            const autores = item.querySelector('autores')?.textContent || '';
+
+            return `
+                <div class="publicacao">
+                    <div class="tituloPublicacao">${titulo}</div>
+                    <div class="eventoPublicacao">${evento} (${ano}) - ${local}</div>
+                    <div class="autorPublicacao">${autores}</div>
+                </div>
+            `;
+        }
+
+    </script>
+</body>
+</html>
