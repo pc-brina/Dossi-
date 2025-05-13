@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pessoas>
+    <pessoa>
+        <nome>Lucas</nome>
+        <sobrenome>Marques da Cunha</sobrenome>
+        <descricao>Professor vinculado ao Departamento Acadêmico de Ciência da Computação da Universidade Federal de Rondônia. Possui graduação em Sistemas de Informação - Faculdades Integradas de Patos (2012). Especialista em Gestão da Educação Municipal - UFPB (2017). Mestrado em Informática pelo Programa de Pós-graduação em Informática (PPGI) da Universidade Federal da Paraíba - UFPB (2016). Doutorado em Bioinformática pela Universidade Federal do Rio Grande do Norte. Atuou como pesquisador na área de Genômica e Proteômica do Câncer pelo Centro Multiusuário de Bioinformática - UFRN. Tem experiência na área de Proteômica do câncer, Processamento de Sinais e Inteligência Artificial, com ênfase em Processamento Digital de Imagens e Aprendizagem de Máquina. Atua como pesquisador na área de proteômica no Centro de Estudos de Biomoléculas Aplicadas à Saúde (CEBio) da FIOCRUZ - RO.</descricao>
+        <formacao>
+            <graduacao>
+                <tituloobtido>Graduação em Sistemas de Informação</tituloobtido>
+                <instituicao>Faculdades Integradas de Patos, FIP</instituicao>
+                <local>Patos, PB - BR</local>
+                <titulo>Gerenciamento da Qualidade de Requisitos: Comparação de Ferramentas e Utilização em Micro Empresas de Patos-PB</titulo>
+                <anoinicio>2008</anoinicio>
+                <anofim>2012</anofim>
+                <orientador>Cheyenne Ribeiro Guedes Isidro Abílio</orientador>
+            </graduacao>
+            <mestrado>
+                <tituloobtido>Mestrado em Informática</tituloobtido>
+                <instituicao>Universidade Federal da Paraíba, UFPB</instituicao>
+                <local>João Pessoa, PB - BR</local>
+                <titulo> Reconhecimento de Adulterações em Imagens Digitais: Uma Abordagem Passiva</titulo>
+                <anoinicio>2014</anoinicio>
+                <anofim>2016</anofim>
+                <orientador>Thaís Gaudêncio do Rêgo</orientador>
+            </mestrado>
+            <doutorado>
+                <tituloobtido>Doutorado em Bioinformática</tituloobtido>
+                <instituicao>Universidade Federal do Rio Grande do Norte, UFRN</instituicao>
+                <local>Natal, RN - BR</local>
+                <titulo>Desenvolvimento de abordagens computacionais para análise e identificação de peptídeos polimórficos,</titulo>
+                <anoinicio>2016</anoinicio>
+                <anofim>2022</anofim>
+                <orientador>Gustavo Antônio de Souza</orientador>
+            </doutorado>
+        </formacao>
+       <publicacoes>
+        <publicacao>
+            <titulo>Proteogenomic Analysis of Healthy and Cancerous Prostate Tissues Using SILAC and Mutation Databases</titulo>
+            <ano>2025</ano>
+            <evento>Oncology Advances</evento>
+            <local>—</local>
+            <autores>DE SOUZA SANTOS, GIULLIA; DA CUNHA, RAFAELA MARIE MELO; DA SILVA, RICARDO ALVES; DA SILVA, THAUAN COSTA; DO NASCIMENTO, THIAGO ANTONIO COSTA; DA CUNHA, LUCAS MARQUES</autores>
+        </publicacao>
+        <publicacao>
+            <titulo>ZeroMath: Um aplicativo para o auxílio no ensino e aprendizagem de zero de funções</titulo>
+            <ano>2024</ano>
+            <evento>INFORMÁTICA NA EDUCAÇÃO</evento>
+            <local>—</local>
+            <autores>SILVEIRA, J. P. N.; CUNHA, L. M.</autores>
+        </publicacao>
+        <publicacao>
+            <titulo>eAutoDock - Aplicação WEB para cálculo de energia de ligação entre ligante e proteína</titulo>
+            <ano>2024</ano>
+            <evento>OBSERVATORIO DE LA ECONOMÍA LATINOAMERICANA</evento>
+            <local>—</local>
+            <autores>MACEDO, EDUARDO HERNANY PANTOJA DE; GUARIERO, FERNANDO LOZA; PAIVA, CRISTIAN LUCAS OLIVEIRA; CUNHA, LUCAS MARQUES DA; ZANCHI, FERNANDO BERTON</autores>
+        </publicacao>
+        <publicacao>
+            <titulo>PatternLab for Proteomics V: Um Tutorial para Análise Proteômica no Estudo do Câncer</titulo>
+            <ano>2024</ano>
+            <evento>BIOINFO</evento>
+            <local>—</local>
+            <autores>CUNHA, LUCAS MARQUES DA; CUNHA, RAFAELA MARIE MELO DA; SANTOS, GIULLIA DE SOUZA</autores>
+        </publicacao>
+        <publicacao>
+            <titulo>dbPepVar: a novel cancer proteogenomics database</titulo>
+            <ano>2022</ano>
+            <evento>IEEE Access</evento>
+            <local>—</local>
+            <autores>CUNHA, L. M.; TERREMATTE, P.; FIUZA, T. S.; SILVA, V. L.; KROLL, J. E.; SOUZA. S. J.; SOUZA, G. A</autores>
+        </publicacao>
+        <publicacao>
+            <titulo>neoANT-HILL: an integrated tool for identification of potential neoantigens</titulo>
+            <ano>2020</ano>
+            <evento>BMC Medical Genomics</evento>
+            <local>—</local>
+            <autores>COELHO, ANA CAROLINA M. F.; FONSECA, ANDRÉ L.; MARTINS, DANILO L.; LINS, PAULO B. R.; DA CUNHA, LUCAS M.; DE SOUZA, SANDRO J.</autores>
+        </publicacao>
+        <publicacao>
+            <titulo>MODELO DE CHATBOT PARA APRENDIZADO DA CULTURA BERADEIRA</titulo>
+            <ano>2023</ano>
+            <evento>VI CONGRESSO AMAZÔNICO DE EDUCAÇÃO A DISTÂNCIA</evento>
+            <local>Porto Velho, RO - BR</local>
+            <autores>BARBOSA, W. C.; SILVA, R. A.; CAMPOS, S. P.; TOBIAS, N. B.; CUNHA, L. M.</autores>
+        </publicacao>
+        <publicacao>
+            <titulo>SNAKE GAME EDUCACIONAL: INTEGRAÇÃO DE ÁLGEBRA LINEAR PARA APRENDIZAGEM EM AMBIENTES VIRTUAIS</titulo>
+            <ano>2024</ano>
+            <evento>VII Congresso Amazônico de Educação à Distância</evento>
+            <local>Porto Velho, RO - BR</local>
+            <autores>MOREIRA, E. M.; TOBIAS, N. B.; CUNHA, L. M.</autores>
+        </publicacao>
+        <publicacao>
+            <titulo>SALM KIDS: INOVAÇÃO NA ALFABETIZAÇÃO INFANTIL COM TECNOLOGIAS EMERGENTES</titulo>
+            <ano>2024</ano>
+            <evento>VII Congresso Amazônico de Educação à Distância</evento>
+            <local>Porto Velho, RO - BR</local>
+            <autores>CAMPOS, S. P.; PINTO JUNIOR, M. O.; CUNHA, L. M.</autores>
+        </publicacao>
+        <publicacao>
+            <titulo>HERAS: Um Jogo Interativo para Aprender Álgebra Linear com Gamificação</titulo>
+            <ano>2024</ano>
+            <evento>VII Congresso Amazônico de Educação à Distância</evento>
+            <local>Porto Velho, RO - BR</local>
+            <autores>BARROS, M. F.; SANTOS, H. U.; FEITOSA, R. R.; CUNHA, L. M.</autores>
+        </publicacao>
+        <publicacao>
+            <titulo>DESENVOLVIMENTO DE UMA PLATAFORMA WEB PARA ANÁLISE E EXPLORAÇÃO DE DADOS NUTRIGENÉTICOS</titulo>
+            <ano>2024</ano>
+            <evento>XXXIII Seminário de Iniciação Científica (Pibic) e VI Seminário de Desenvolvimento Tecnológico e Inovação (Pibiti)</evento>
+            <local>Porto Velho, RO - BR</local>
+            <autores>SILVA, R. A.; SILVA, T. C.; CUNHA, L. M.</autores>
+        </publicacao>
+        <publicacao>
+            <titulo>Classificação de Peptídeos Polimórficos Utilizando Algoritmos de Aprendizado de Máquina: Um Estudo Comparativo</titulo>
+            <ano>2024</ano>
+            <evento>Seminário</evento>
+            <local>—</local>
+            <autores>DA CUNHA, LUCAS M.</autores>
+        </publicacao>
+    </publicacoes>
+
+    </pessoa>
+</pessoas>
